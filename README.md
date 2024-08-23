@@ -7,7 +7,7 @@ Keylogger will capture any press keystroke (note that I just concentrate on key 
 - Characters cannot be displayed like [ENTER] [ALT] [BACKSPACE]
 and also capture the latest record on clipboard comprising of images or text.
 All data will be saved on memory and delivered to the remote-specified machine instead of creating log file on the local victim machine.
-
+It is not detected by MDE (tested on 8/20/2024 : Windows 10 22H2 latest)
 ## I. Installation
 
 - ***Mingw***:
