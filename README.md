@@ -6,12 +6,12 @@ Keylogger will capture any press keystroke (note that I just concentrate on key 
 - Some special char like , . ; { } ` ....
 - Characters cannot be displayed like [ENTER] [ALT] [BACKSPACE]
 and also capture the latest record on clipboard comprising of images or text.
-All data will save on memory and deliver to remote specified machine instead of creating log file on local victim machine.
-
+All data will be saved on memory and delivered to the remote-specified machine instead of creating log file on the local victim machine.
+It is not detected by MDE (tested on 8/20/2024 : Windows 10 22H2 latest)
 ## I. Installation
 
 - ***Mingw***:
-    *note that I try to use Microsoft Visual Studio to build exe but I got a lot of errors with lib and header file, you can use MVS if you want, or install Mingw like me*
+    *note that I tried to use Microsoft Visual Studio to build exe but I got a lot of errors with lib and header files, you can use MVS if you want, or install Mingw like me*
 
 ```bash
 sudo apt-get update
@@ -38,10 +38,8 @@ python3 server.py
 
 ![plot](./images/client.png)
 
-## III. Contributing
-
-- Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-- Please make sure to update tests as appropriate.
-## IV. Disclaimer
-- There is no clean code, no penetration test provided, this repo is only for educational purposes. If you got trouble with this, please contact me.
+> [!CAUTION]
+> There is no clean code, no penetration test provided, this repo is for educational purposes only. Do not use for illegal purposes. I'm never responsible for illegal use. Educational purpose only!
+## Support me (optional)
+If you find it useful, you can support me with a cup of coffee.
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2123O0D)
