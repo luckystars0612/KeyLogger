@@ -28,7 +28,7 @@ def process_received_data(data):
         type_data, data = data.split(':',1)
         if type_data == 'text':
             file_name = 'clipboard_text' + datetime.now().strftime('%Y-%m-%d') + '.txt'
-            save_to_file(data,'log/clipboard/text/',file_name,'a','-'*50+'\n')
+            save_to_file(data,'log/clipboard/text/',file_name,'a','\n'+'-'*50+'\n')
         elif type_data == 'image':
             file_name = 'clipboard_image' + datetime.now().strftime('%Y-%m-%d %H-%M-%S')
             convert_bmp_to_jpeg(decode_base64_to_bmp(data),file_name)

